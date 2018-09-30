@@ -1,6 +1,6 @@
 provider "vault" {
-	address = "http://18.224.64.123:8200"
-	token = "884b7e18-74cc-e00e-2889-9a55cf99aff2"
+	address = "${var.vault_addr}"
+	token = "${var.vault_token}"
 }
 
 resource "vault_aws_secret_backend" "aws" {
