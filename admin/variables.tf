@@ -1,6 +1,9 @@
-variable "access_key" { }
-variable "secret_key" { }
-
+variable "access_key" {
+  default="AWS_ACCESS_KEY_HERE"
+}
+variable "secret_key" {
+  default = "AWS_SECRET_KEY_HERE"
+}
 variable "vault_addr" {
   default="VAULT_ADDR"
 }
